@@ -1,0 +1,29 @@
+menu:
+  首页: /
+  归档: /archives
+  # 关于: /about
+  # 简历: /resume
+  RSS: /atom.xml
+
+widgets:
+  # - category
+  - tagcloud
+  - recent_posts
+  # - archive
+  # - recent_comments
+  # - recent_visitors
+
+excerpt_link: 全文
+recent_posts_count: 10
+
+blogrolls:
+  - Heroic Yang's Blog: http://heroicyang.com/
+
+duoshuo: bubkoo
+
+fancybox: true
+
+baidu_tongji: true
+
+google_analytics:
+rss:

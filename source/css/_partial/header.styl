@@ -1,0 +1,45 @@
+#header
+  clearfix()
+  text-shadow 0 0 1px #fff
+  margin 30px auto 40px auto
+  @media screen and (max-width: 600px)
+    margin-bottom 20px
+    .alignleft,.alignright
+      float none
+      display block
+      text-align center
+
+  a
+    color color-font
+    &:hover
+      color color-link
+      text-decoration none
+
+  h1
+    font-weight normal
+    font-size 2.5em
+    line-height 1
+
+  h2
+    font-weight normal
+    font-size 1.1em
+    line-height 1
+    margin-top 10px
+
+  #main-nav
+    clearfix()
+    font-family font-title
+    line-height 4em
+    ul
+      list-style none
+      li
+        float left
+        margin 0 0 0 30px
+        font-size 1.3em
+    @media screen and (max-width: 600px)
+      ul
+        text-align center
+        li
+          float none
+          display inline-block
+          margin 0 8px

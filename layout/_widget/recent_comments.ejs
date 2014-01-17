@@ -1,0 +1,7 @@
+<% if (theme.duoshuo){ %>
+<div class="widget recent_comments">
+  <h3 class="title"><%= __('recent_comments') %></h3>
+  <ul class="entry ds-recent-comments" data-num-items="5" data-show-avatars="0" data-show-title="1" data-show-time="1"></ul>
+  <%- partial('util/loadDuoShuoJS') %>
+</div>
+<% } %>

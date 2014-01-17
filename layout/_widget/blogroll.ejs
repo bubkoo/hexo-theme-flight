@@ -1,0 +1,17 @@
+<% if (theme.blogrolls && theme.blogrolls.length > 0) { %>
+<div class="widget tag">
+  <h3 class="title"><%= __('blogroll') %></h3>
+  <ul class="entry">
+  <% theme.blogrolls.forEach(function(item){ %>
+    <%
+      var description, linkURL
+      for (var tmp in item) {
+        description = tmp;
+        linkURL = item[tmp];
+      }
+    %>
+    <li><a href="<%- linkURL %>" title="<%- description %>" target="_blank"><%= description %></a></li>
+  <% }); %>
+  </ul>
+</div>
+<% } %>

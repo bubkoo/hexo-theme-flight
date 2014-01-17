@@ -1,0 +1,57 @@
+<article class="<%= post.layout %>">
+  <div class="post-content">
+    <header>
+      <% if (post.layout != 'page'){ %>
+        <% if (index){ %>
+        <div class="icon"></div>
+        <% } else { %>
+        <div class="icon icon-black"></div>
+        <% } %>
+      <% } %>
+      <%- partial('post/title') %>
+      <% if (post.layout != 'page'){ %>
+        <time datetime="<%= post.date.toDate().toISOString() %>">
+          <span class="day"><%= post.date.format('DD') %></span>
+          <span class="month"><%= post.date.format('YYYY年MM月') %></span>
+        </time>
+      <% } %>
+    </header>
+    <% if (post.photos && post.photos.length > 0){ %>
+    <%- partial('post/gallery') %>
+    <% } %>
+    <div class="entry">
+      <% if (post.excerpt && index){ %>
+        <%- post.excerpt %>
+      <% } else { %>
+        <%- post.content %>
+      <% } %>
+    </div>
+    <footer>
+      <% if (index){ %>
+        <% if (post.excerpt){ %>
+          <div class="alignleft">
+            <a href="<%- config.root %><%- post.path %>#more" class="more-link"><%= theme.excerpt_link %></a>
+          </div>
+        <% } else { %>
+          <div class="alignleft">
+            <a href="<%- config.root %><%- post.path %>" class="more-link"><%= theme.excerpt_link %></a>
+          </div>
+        <% } %>
+        <% if (post.comment && config.disqus_shortname){ %>
+        <div class="alignright">
+          <a href="<%- post.permalink %>#disqus_thread" class="comment-link">Comments</a>
+        </div>
+        <% } %>
+      <% } else { %>
+        <%- partial('post/category') %>
+        <%- partial('post/tag') %>
+      <% } %>
+    </footer>
+  </div>
+
+  <%- partial('post/nav') %>
+
+</article>
+
+<%- partial('comment', {item: post}) %>
+

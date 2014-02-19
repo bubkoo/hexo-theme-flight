@@ -3,6 +3,7 @@ menu:
   归档: /archives
   # 关于: /about
   # 简历: /resume
+  Github: https://github.com/bubkoo
   RSS: /atom.xml
 
 widgets:

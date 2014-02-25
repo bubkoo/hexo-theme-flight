@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3888521b-0ca5-41c4-bbbb-d250ef8b8ae1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layout/_partial/head.ejs" afterPath="$PROJECT_DIR$/layout/_partial/head.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/js/monitor-0.7.0.js" afterPath="$PROJECT_DIR$/source/js/monitor-0.7.0.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="flight.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,35 +26,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="monitor-0.7.0.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="monitor-0.7.0.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/js/monitor-0.7.0.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="605" column="26" selection-start="18930" selection-end="18930" vertical-scroll-proportion="0.0" vertical-offset="2792" max-vertical-offset="3417">
+            <state line="485" column="27" selection-start="14768" selection-end="14768" vertical-scroll-proportion="0.20166667" vertical-offset="3211" max-vertical-offset="4352">
               <folding>
-                <element signature="e#1381#2743#0" expanded="false" />
-                <element signature="e#2758#4933#0" expanded="false" />
-                <element signature="e#4952#6804#0" expanded="false" />
-                <element signature="e#6828#7231#0" expanded="false" />
-                <element signature="e#8567#9882#0" expanded="false" />
-                <element signature="e#9928#10122#0" expanded="false" />
-                <element signature="e#10152#10588#0" expanded="false" />
-                <element signature="e#10621#11094#0" expanded="false" />
-                <element signature="e#11150#12327#0" expanded="false" />
-                <element signature="e#12378#12418#0" expanded="false" />
-                <element signature="e#12474#12818#0" expanded="false" />
-                <element signature="e#14005#14749#0" expanded="false" />
-                <element signature="e#15108#17728#0" expanded="false" />
-                <element signature="e#15142#15338#0" expanded="false" />
-                <element signature="e#17765#18866#0" expanded="false" />
+                <element signature="e#1383#2745#0" expanded="false" />
+                <element signature="e#2760#4935#0" expanded="false" />
+                <element signature="e#4954#6806#0" expanded="false" />
+                <element signature="e#6830#7233#0" expanded="false" />
+                <element signature="e#8568#9883#0" expanded="false" />
+                <element signature="e#9929#10123#0" expanded="false" />
+                <element signature="e#10153#10589#0" expanded="false" />
+                <element signature="e#10622#11095#0" expanded="false" />
+                <element signature="e#11151#12328#0" expanded="false" />
+                <element signature="e#12379#12419#0" expanded="false" />
+                <element signature="e#12475#12819#0" expanded="false" />
+                <element signature="e#15190#17810#0" expanded="false" />
+                <element signature="e#15224#15420#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="monitor-d-0.7.0.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="monitor-d-0.7.0.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/js/monitor-d-0.7.0.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="571" column="20" selection-start="19590" selection-end="19590" vertical-scroll-proportion="0.9493464" vertical-offset="1731" max-vertical-offset="2601">
+            <state line="514" column="16" selection-start="17840" selection-end="17840" vertical-scroll-proportion="0.0" vertical-offset="1476" max-vertical-offset="2601">
               <folding>
                 <element signature="e#152#1120#0" expanded="false" />
                 <element signature="e#1161#1254#0" expanded="false" />
@@ -92,7 +91,7 @@
       <file leaf-file-name="monitor.ejs" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/layout/_partial/monitor.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="56" selection-start="313" selection-end="324" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="799">
+            <state line="20" column="18" selection-start="677" selection-end="677" vertical-scroll-proportion="-2.6923077" vertical-offset="270" max-vertical-offset="799">
               <folding />
             </state>
           </provider>
@@ -116,8 +115,8 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/source/js/monitor-0.7.0.js" />
         <option value="$PROJECT_DIR$/source/js/monitor-d-0.7.0.js" />
+        <option value="$PROJECT_DIR$/source/js/monitor-0.7.0.js" />
       </list>
     </option>
   </component>
@@ -242,9 +241,45 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="E:/bubkoo-monitor" />
   </component>
   <component name="RunManager">
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="name" value="Dart" />
+      <option name="saveOutputToFile" value="false" />
+      <option name="showConsoleOnStdErr" value="false" />
+      <option name="showConsoleOnStdOut" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
+      <setting name="configLocationType" value="CONFIG_FILE" />
+      <setting name="settingsFile" value="" />
+      <setting name="serverType" value="INTERNAL" />
+      <setting name="preferredDebugBrowser" value="CHROME" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <browser start="false" url="" with-js-debugger="false" />
+      <method />
+    </configuration>
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -263,8 +298,9 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.59662575" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963397" sideWeight="0.40337422" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -272,7 +308,6 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -291,39 +326,9 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/layout/_partial/monitor.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="56" selection-start="313" selection-end="324" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="799">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/js/monitor-0.7.0.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="605" column="26" selection-start="18930" selection-end="18930" vertical-scroll-proportion="0.0" vertical-offset="2792" max-vertical-offset="3417">
-          <folding>
-            <element signature="e#1381#2743#0" expanded="false" />
-            <element signature="e#2758#4933#0" expanded="false" />
-            <element signature="e#4952#6804#0" expanded="false" />
-            <element signature="e#6828#7231#0" expanded="false" />
-            <element signature="e#8567#9882#0" expanded="false" />
-            <element signature="e#9928#10122#0" expanded="false" />
-            <element signature="e#10152#10588#0" expanded="false" />
-            <element signature="e#10621#11094#0" expanded="false" />
-            <element signature="e#11150#12327#0" expanded="false" />
-            <element signature="e#12378#12418#0" expanded="false" />
-            <element signature="e#12474#12818#0" expanded="false" />
-            <element signature="e#14005#14749#0" expanded="false" />
-            <element signature="e#15108#17728#0" expanded="false" />
-            <element signature="e#15142#15338#0" expanded="false" />
-            <element signature="e#17765#18866#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/js/monitor-d-0.7.0.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="571" column="20" selection-start="19590" selection-end="19590" vertical-scroll-proportion="0.9493464" vertical-offset="1731" max-vertical-offset="2601">
+        <state line="514" column="16" selection-start="17840" selection-end="17840" vertical-scroll-proportion="0.0" vertical-offset="1476" max-vertical-offset="2601">
           <folding>
             <element signature="e#152#1120#0" expanded="false" />
             <element signature="e#1161#1254#0" expanded="false" />
@@ -354,6 +359,34 @@
             <element signature="e#16595#17538#0" expanded="false" />
             <element signature="e#18148#18942#0" expanded="false" />
             <element signature="e#18970#19148#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layout/_partial/monitor.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="18" selection-start="677" selection-end="677" vertical-scroll-proportion="-2.6923077" vertical-offset="270" max-vertical-offset="799">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/js/monitor-0.7.0.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="485" column="27" selection-start="14768" selection-end="14768" vertical-scroll-proportion="0.20166667" vertical-offset="3211" max-vertical-offset="4352">
+          <folding>
+            <element signature="e#1383#2745#0" expanded="false" />
+            <element signature="e#2760#4935#0" expanded="false" />
+            <element signature="e#4954#6806#0" expanded="false" />
+            <element signature="e#6830#7233#0" expanded="false" />
+            <element signature="e#8568#9883#0" expanded="false" />
+            <element signature="e#9929#10123#0" expanded="false" />
+            <element signature="e#10153#10589#0" expanded="false" />
+            <element signature="e#10622#11095#0" expanded="false" />
+            <element signature="e#11151#12328#0" expanded="false" />
+            <element signature="e#12379#12419#0" expanded="false" />
+            <element signature="e#12475#12819#0" expanded="false" />
+            <element signature="e#15190#17810#0" expanded="false" />
+            <element signature="e#15224#15420#0" expanded="false" />
           </folding>
         </state>
       </provider>

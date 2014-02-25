@@ -11,10 +11,10 @@
         mode = MODE.DEV, // 产品模式
 
         SEND_STATUS = {
-            COMPLETE: 0,
+            COMPLETED: 0,
             SENDING: 1
         },
-        sendState = SEND_STATUS.COMPLETE, // 发送状态
+        sendState = SEND_STATUS.COMPLETED, // 发送状态
 
         scriptHome,
         scriptList,
@@ -239,7 +239,7 @@
     };
 
     // 根据域名来判断是什么模式
-    LOG_SERVER = "https://monitor.bubkoo.com/m.gif";
+    LOG_SERVER = "http://monitor.bubkoo.com/m.gif";
     scriptHome = "/js/";
     scriptList = ["monitor-d-0.7.0.js"];
 
@@ -357,7 +357,7 @@
         }
         M.timedSend();
     };
-    // try。。catch.. 异常调用
+    // try..catch.. 异常调用
     M.error = function (err) {
         if (!(err instanceof Error)) {
             return;
@@ -428,7 +428,7 @@
             return;
         }
         var d = encodeURIComponent(data);
-        url = url + (url.indexOf('?') < 0 ? '?' : '&') + d;
+        url = url + (url.indexOf('?') < 0 ? '?d=' : '&d=') + d;
         try {
             var img = new Image(1, 1);
 
@@ -467,7 +467,7 @@
         }
         var err = M._errors.shift();
         if (!err) {
-            sendState = SEND_STATUS.COMPLETE;
+            sendState = SEND_STATUS.COMPLETED;
             return;
         }
         sendState = SEND_STATUS.SENDING;
@@ -479,10 +479,12 @@
         common_data.rnd = M.S.rand();
         try {
             send(LOG_SERVER, $JSON.toString(common_data), function () {
-                sendState = SEND_STATUS.COMPLETE;
+                sendState = SEND_STATUS.COMPLETED;
                 M.timedSend();
             })
         } catch (e) {
+            console.log(e);
+            sendState = SEND_STATUS.COMPLETED;
         }
     };
 

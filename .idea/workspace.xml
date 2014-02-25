@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3888521b-0ca5-41c4-bbbb-d250ef8b8ae1" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layout/_partial/head.ejs" afterPath="$PROJECT_DIR$/layout/_partial/head.ejs" />
+    </list>
+    <ignored path="flight.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="flight" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="monitor-0.7.0.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/js/monitor-0.7.0.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="605" column="26" selection-start="18930" selection-end="18930" vertical-scroll-proportion="0.0" vertical-offset="2792" max-vertical-offset="3417">
+              <folding>
+                <element signature="e#1381#2743#0" expanded="false" />
+                <element signature="e#2758#4933#0" expanded="false" />
+                <element signature="e#4952#6804#0" expanded="false" />
+                <element signature="e#6828#7231#0" expanded="false" />
+                <element signature="e#8567#9882#0" expanded="false" />
+                <element signature="e#9928#10122#0" expanded="false" />
+                <element signature="e#10152#10588#0" expanded="false" />
+                <element signature="e#10621#11094#0" expanded="false" />
+                <element signature="e#11150#12327#0" expanded="false" />
+                <element signature="e#12378#12418#0" expanded="false" />
+                <element signature="e#12474#12818#0" expanded="false" />
+                <element signature="e#14005#14749#0" expanded="false" />
+                <element signature="e#15108#17728#0" expanded="false" />
+                <element signature="e#15142#15338#0" expanded="false" />
+                <element signature="e#17765#18866#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="monitor-d-0.7.0.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source/js/monitor-d-0.7.0.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="571" column="20" selection-start="19590" selection-end="19590" vertical-scroll-proportion="0.9493464" vertical-offset="1731" max-vertical-offset="2601">
+              <folding>
+                <element signature="e#152#1120#0" expanded="false" />
+                <element signature="e#1161#1254#0" expanded="false" />
+                <element signature="e#1276#1369#0" expanded="false" />
+                <element signature="e#2801#4428#0" expanded="false" />
+                <element signature="e#4473#4830#0" expanded="false" />
+                <element signature="e#4866#5098#0" expanded="false" />
+                <element signature="e#5131#5690#0" expanded="false" />
+                <element signature="e#5732#6739#0" expanded="false" />
+                <element signature="e#6776#7006#0" expanded="false" />
+                <element signature="e#7043#7758#0" expanded="false" />
+                <element signature="e#7816#9326#0" expanded="false" />
+                <element signature="e#9361#9404#0" expanded="false" />
+                <element signature="e#9437#10338#0" expanded="false" />
+                <element signature="e#10372#10562#0" expanded="false" />
+                <element signature="e#10743#11318#0" expanded="false" />
+                <element signature="e#11353#12141#0" expanded="false" />
+                <element signature="e#12174#13167#0" expanded="false" />
+                <element signature="e#13201#13418#0" expanded="false" />
+                <element signature="e#13514#14172#0" expanded="false" />
+                <element signature="e#14207#14545#0" expanded="false" />
+                <element signature="e#14579#15270#0" expanded="false" />
+                <element signature="e#15304#15942#0" expanded="false" />
+                <element signature="e#15975#16074#0" expanded="false" />
+                <element signature="e#16104#16203#0" expanded="false" />
+                <element signature="e#16233#16332#0" expanded="false" />
+                <element signature="e#16362#16548#0" expanded="false" />
+                <element signature="e#16595#17538#0" expanded="false" />
+                <element signature="e#18148#18942#0" expanded="false" />
+                <element signature="e#18970#19148#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="monitor.ejs" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/layout/_partial/monitor.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="56" selection-start="313" selection-end="324" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="799">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/source/js/monitor-0.7.0.js" />
+        <option value="$PROJECT_DIR$/source/js/monitor-d-0.7.0.js" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-12" />
+    <option name="y" value="-12" />
+    <option name="width" value="1382" />
+    <option name="height" value="784" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flight" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flight" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flight" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flight" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flight" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="source" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flight" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flight" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="source" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flight" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flight" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flight" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flight" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_partial" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager">
+    <list size="0" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3888521b-0ca5-41c4-bbbb-d250ef8b8ae1" name="Default" comment="" />
+      <created>1393347977560</created>
+      <updated>1393347977560</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-12" y="-12" width="1382" height="784" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/layout/_partial/monitor.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="56" selection-start="313" selection-end="324" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="799">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/js/monitor-0.7.0.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="605" column="26" selection-start="18930" selection-end="18930" vertical-scroll-proportion="0.0" vertical-offset="2792" max-vertical-offset="3417">
+          <folding>
+            <element signature="e#1381#2743#0" expanded="false" />
+            <element signature="e#2758#4933#0" expanded="false" />
+            <element signature="e#4952#6804#0" expanded="false" />
+            <element signature="e#6828#7231#0" expanded="false" />
+            <element signature="e#8567#9882#0" expanded="false" />
+            <element signature="e#9928#10122#0" expanded="false" />
+            <element signature="e#10152#10588#0" expanded="false" />
+            <element signature="e#10621#11094#0" expanded="false" />
+            <element signature="e#11150#12327#0" expanded="false" />
+            <element signature="e#12378#12418#0" expanded="false" />
+            <element signature="e#12474#12818#0" expanded="false" />
+            <element signature="e#14005#14749#0" expanded="false" />
+            <element signature="e#15108#17728#0" expanded="false" />
+            <element signature="e#15142#15338#0" expanded="false" />
+            <element signature="e#17765#18866#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/js/monitor-d-0.7.0.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="571" column="20" selection-start="19590" selection-end="19590" vertical-scroll-proportion="0.9493464" vertical-offset="1731" max-vertical-offset="2601">
+          <folding>
+            <element signature="e#152#1120#0" expanded="false" />
+            <element signature="e#1161#1254#0" expanded="false" />
+            <element signature="e#1276#1369#0" expanded="false" />
+            <element signature="e#2801#4428#0" expanded="false" />
+            <element signature="e#4473#4830#0" expanded="false" />
+            <element signature="e#4866#5098#0" expanded="false" />
+            <element signature="e#5131#5690#0" expanded="false" />
+            <element signature="e#5732#6739#0" expanded="false" />
+            <element signature="e#6776#7006#0" expanded="false" />
+            <element signature="e#7043#7758#0" expanded="false" />
+            <element signature="e#7816#9326#0" expanded="false" />
+            <element signature="e#9361#9404#0" expanded="false" />
+            <element signature="e#9437#10338#0" expanded="false" />
+            <element signature="e#10372#10562#0" expanded="false" />
+            <element signature="e#10743#11318#0" expanded="false" />
+            <element signature="e#11353#12141#0" expanded="false" />
+            <element signature="e#12174#13167#0" expanded="false" />
+            <element signature="e#13201#13418#0" expanded="false" />
+            <element signature="e#13514#14172#0" expanded="false" />
+            <element signature="e#14207#14545#0" expanded="false" />
+            <element signature="e#14579#15270#0" expanded="false" />
+            <element signature="e#15304#15942#0" expanded="false" />
+            <element signature="e#15975#16074#0" expanded="false" />
+            <element signature="e#16104#16203#0" expanded="false" />
+            <element signature="e#16233#16332#0" expanded="false" />
+            <element signature="e#16362#16548#0" expanded="false" />
+            <element signature="e#16595#17538#0" expanded="false" />
+            <element signature="e#18148#18942#0" expanded="false" />
+            <element signature="e#18970#19148#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+

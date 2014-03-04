@@ -58,6 +58,7 @@
         href: loc.href,
         hash: loc.hash
     };
+
     M.url = M._loc.href;
 
     M.S = {
@@ -606,6 +607,6 @@
 
     window.setTimeout(function () {
         sendPerformance();
-    }, M.delay)
+    }, M.delay);
 
 })(window);

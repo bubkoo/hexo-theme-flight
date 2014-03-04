@@ -54,6 +54,10 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <%- partial('google_analytics') %>
-    <%- partial('monitor') %>
-    <script src="<%- config.root %>js/monitor-0.7.0.js"></script>
+    <script src="<%- config.root %>js/lib/sea.js"></script>
+    <script src="<%- config.root %>js/sea.config.js"></script>
+    <script type="text/javascript">
+        __start__ = window.performance && performance.timing ? performance.timing.navigationStart : Date.now();
+        seajs.use('monitor');
+    </script>
 </head>

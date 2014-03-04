@@ -32,7 +32,7 @@ define(function (require, exports, module) {
         commonDataStr = param(commonData),
         reg_fun = /^function\b[^\)]+\)/,
         toString = Object.prototype.toString,
-        M = {};
+        M = window.monitor ? window.monitor : {};
 
     M.now = function () {
         /**
@@ -82,8 +82,8 @@ define(function (require, exports, module) {
             timeSpan = now - start;
         M.dataCache.push({
             type: 'timer',
-            'name': name,
-            'time': timeSpan
+            name: name,
+            time: timeSpan
         });
         M.send();
         return timeSpan;
@@ -143,6 +143,7 @@ define(function (require, exports, module) {
 
     window.monitor = M;
     module.exports = M;
+    seajs.use(['monitor-perf']);
 
     function getFunName(caller) {
         var mc = String(caller).match(reg_fun);

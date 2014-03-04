@@ -4,7 +4,7 @@
  */
 define(function (require, exports, module) {
     var M = require("monitor"),
-        window = window;
+        win = window;
 
     function onError(msg, file, line) {
         M.push({
@@ -17,7 +17,7 @@ define(function (require, exports, module) {
         return false;
     }
 
-    if (window.addEventListener) {
+    if (win.addEventListener) {
         /*
          需要特别注意addEventListener的第三个参数，是否在捕获阶段处理
          这个参数，大多数时候用的都是false
@@ -25,12 +25,12 @@ define(function (require, exports, module) {
          但是opera用false时就无法处理error
          必须设置为true，在捕获阶段处理error，脚本才能正常运行
          */
-        window.addEventListener('error', onError, true);
+        win.addEventListener('error', onError, true);
     }
-    else if (window.attachEvent) {
-        window.attachEvent('onerror', onError);
+    else if (win.attachEvent) {
+        win.attachEvent('onerror', onError);
     } else {
-        window.onerror = onError;
+        win.onerror = onError;
     }
 })
 ;

@@ -4,6 +4,6 @@
  */
 define(function (require, exports, module) {
     var M = require("monitor"),
-        window = window,
-        doc = window.document;
+        win = window,
+        doc = win.document;
 });

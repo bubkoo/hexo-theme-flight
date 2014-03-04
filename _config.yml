@@ -16,7 +16,7 @@ widgets:
   # - recent_visitors
 
 excerpt_link: 全文
-recent_posts_count: 15
+recent_posts_count: 10
 
 blogrolls:
   - Heroic Yang's Blog: http://heroicyang.com/

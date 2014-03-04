@@ -4,8 +4,8 @@
  */
 define(function (require, exports, module) {
     var M = require('monitor'),
-        window = window,
-        doc = window.document,
+        win = window,
+        doc = win.document,
 
         htmlErrors = [],
         duplicateIDs = [], // 重复的 ID
@@ -132,7 +132,7 @@ define(function (require, exports, module) {
 
             HEAD: function (node) {
                 counter.heads++;
-                if (M.client.browser.name == 'ie') {
+                if (M.isIE) {
                     return;
                 }
                 var meta = D.firstChild(node),
@@ -193,7 +193,7 @@ define(function (require, exports, module) {
                     if (!src || re_empty.test(src)) {
                         log(0, html, 'attr [src] is empty.', errorCodes.attrIllegal);
                     } else {
-                        var uri = URI.path(URI.abs(src));
+                        var uri = M.URI.path(M.URI.abs(src));
                         res.js.push(uri);
                         if (res_cache.js.hasOwnProperty(uri)) {
                             res_cache.js[uri]++;
@@ -220,7 +220,7 @@ define(function (require, exports, module) {
                 if (!href || re_empty.test(href)) {
                     log(0, html, 'attr [href] is empty.', errorCodes.attrIllegal);
                 } else {
-                    var uri = URI.path(URI.abs(href));
+                    var uri = M.URI.path(M.URI.abs(href));
                     res.css.push(uri);
                     if (res_cache.css.hasOwnProperty(uri)) {
                         res_cache.css[uri]++;
@@ -250,7 +250,7 @@ define(function (require, exports, module) {
                 if (!src || re_empty.test(src)) {
                     log(0, html, 'protocol illegal.', errorCodes.protocolIllegal);
                 } else {
-                    var uri = URI.path(URI.abs(src));
+                    var uri = M.URI.path(M.URI.abs(src));
                     res.img.push(uri);
                     if (res_cache.img.hasOwnProperty(uri)) {
                         res_cache.img[uri]++;
@@ -277,7 +277,7 @@ define(function (require, exports, module) {
                     if (!src || re_empty.test(src)) {
                         log(0, html, 'attr [value] is empty.', errorCodes.attrIllegal);
                     } else {
-                        var uri = URI.path(URI.abs(src));
+                        var uri = M.URI.path(M.URI.abs(src));
                         res.fla.push(uri);
                         if (res_cache.fla.hasOwnProperty(uri)) {
                             res_cache.fla[uri]++;
@@ -295,7 +295,7 @@ define(function (require, exports, module) {
                     if (!src || re_empty.test(src)) {
                         log(0, html, 'attr [src] is empty.', errorCodes.attrIllegal);
                     } else {
-                        var uri = URI.path(URI.abs(src));
+                        var uri = M.URI.path(M.URI.abs(src));
                         res.fla.push(uri);
                         if (res_cache.fla.hasOwnProperty(uri)) {
                             res_cache.fla[uri]++;
@@ -380,6 +380,13 @@ define(function (require, exports, module) {
             }
         };
 
+    function byteLength(str) {
+        if (!str) {
+            return 0;
+        }
+        return str.replace(/[^\x00-\xff]/g, 'xx').length;
+    }
+
     function makeMap(str) {
         var obj = {},
             items = str.split(',');
@@ -389,11 +396,17 @@ define(function (require, exports, module) {
         return obj;
     }
 
+    function camelize(str) {
+        return str.replace(/\-+([a-z])/g, function ($0, $1) {
+            return $1.toUpperCase();
+        })
+    }
+
     function getStyle(ele, style) {
         /**
          * 获取元素的样式
          */
-        var s = M.S.camelize(style),
+        var s = camelize(style),
             value = ele.style[s];// 获取内联样式
         if (!value) {
             // 获取元素最终样式，兼容写法
@@ -407,7 +420,7 @@ define(function (require, exports, module) {
             }
         }
         // Opera提供了专门的浏览器标志 - window.opera属性
-        if (window.opera && ',left,top,right,bottom,'.indexOf(',' + style + ',') >= 0) {
+        if (win.opera && ',left,top,right,bottom,'.indexOf(',' + style + ',') >= 0) {
             if (getStyle(ele, 'position') === 'static') {
                 value = 'auto';
             }
@@ -537,7 +550,7 @@ define(function (require, exports, module) {
         if (duplicateIDs.length > 0) {
             log(0, 'duplicate id:' + duplicateIDs.join(','), 'duplicate id.', errorCodes.idDuplicated);
         }
-        if (M.client.browser.name == 'ie') {
+        if (M.isIE) {
             return;
         }
         if (counter.titles < 1) {
@@ -554,20 +567,21 @@ define(function (require, exports, module) {
         runValidate(doc, validateRules);
         globalProcessing(doc);
         t = new Date() - t;
-        M.log('Validate DOM Time: ' + t);
-        return {
-            res: {
-                css: res.css,
-                js: res.js,
-                img: res.img,
-                fla: res.fla
-            },
-            htmlSize: M.S.byteLength(D.outerHTML(doc.documentElement)),
-            htmlErr: htmlErrors
-        };
+        M.log('Validate DOM Time: ' + t + 'ms.');
     }
 
-    window.setTimeout(function () {
-        var lintResult = doLint();
+    win.setTimeout(function () {
+        doLint();
+        M.push({
+            type: 'pageRes',
+            css: res.css,
+            js: res.js,
+            img: res.img,
+            fla: res.fla,
+            htmlSize: byteLength(D.outerHTML(doc.documentElement))
+        });
+        if (htmlErrors && htmlErrors.length > 0) {
+            M.pushDOMLint(htmlErrors);
+        }
     }, 10);
 });

@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3888521b-0ca5-41c4-bbbb-d250ef8b8ae1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/js/monitor/events.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/js/sea.config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/js/monitor/monitor.js" afterPath="$PROJECT_DIR$/source/js/monitor/monitor.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\Hexo\themes\flight\.idea\.name" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\Hexo\themes\flight\.idea\encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\Hexo\themes\flight\.idea\flight.iml" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\Hexo\themes\flight\.idea\jsLibraryMappings.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\Hexo\themes\flight\.idea\misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\Hexo\themes\flight\.idea\modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\Dropbox\Hexo\themes\flight\.idea\vcs.xml" afterPath="" />
     </list>
     <ignored path="flight.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -49,7 +54,7 @@
       <file leaf-file-name="sea.config.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/js/sea.config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="35" selection-start="162" selection-end="162" vertical-scroll-proportion="0.136" vertical-offset="0" max-vertical-offset="625">
+            <state line="9" column="0" selection-start="197" selection-end="197" vertical-scroll-proportion="0.2448" vertical-offset="0" max-vertical-offset="625">
               <folding />
             </state>
           </provider>
@@ -444,13 +449,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/js/monitor/monitor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="166" selection-end="166" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/layout/_partial/header.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="306">
@@ -479,9 +477,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/source/js/monitor/monitor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="166" selection-end="166" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/source/js/sea.config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="35" selection-start="162" selection-end="162" vertical-scroll-proportion="0.136" vertical-offset="0" max-vertical-offset="625">
+        <state line="9" column="0" selection-start="197" selection-end="197" vertical-scroll-proportion="0.2448" vertical-offset="0" max-vertical-offset="625">
           <folding />
         </state>
       </provider>

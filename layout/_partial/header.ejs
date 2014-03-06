@@ -1,11 +1,21 @@
 <div class="alignleft">
-  <h1><a href="<%- config.root %>"><%= config.title %></a></h1>
-  <h2><% if (config.subtitle){ %><%= config.subtitle %><% } %></h2>
+    <h1><a href="<%- config.root %>" seed="header-title">
+            <%= config.title %>
+        </a>
+    </h1>
+
+    <h2 seed="header-subTitle">
+        <% if (config.subtitle){ %>
+        <%= config.subtitle %>
+        <% } %>
+    </h2>
 </div>
 <nav id="main-nav" class="alignright">
-  <ul>
-    <% for (var i in theme.menu){ %>
-      <li><a href="<%- theme.menu[i] %>"><%= i %></a></li>
-    <% } %>
-  </ul>
+    <ul>
+        <% for (var i in theme.menu){ %>
+        <li>
+            <a href="<%- theme.menu[i] %>" seed="nav-main"><%= i %></a>
+        </li>
+        <% } %>
+    </ul>
 </nav>

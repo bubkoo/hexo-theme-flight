@@ -228,7 +228,7 @@ define(function (require, exports, module) {
 
     win.monitor = M;
     module.exports = M;
-    seajs.use(['monitor-perf', 'monitor-dlint']);
+    seajs.use(['monitor-perf', 'monitor-dlint','monitor-heat']);
 
     function getFunName(caller) {
         var mc = String(caller).match(reg_fun);

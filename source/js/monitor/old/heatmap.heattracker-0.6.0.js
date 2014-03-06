@@ -28,11 +28,11 @@
             },
             doc = window.document,
             rate = _rate, // 采样频率，值越小越频繁，大于等于1时将不会采样
-            heatBlockAttr = 'coor', // 热点块属性名
-            defaultHeatBlock = 'default', // 默认热点块的名称
-            heatRateAttr = "coor-rate", // 采样频率
+            heatAttr = 'coor', // 热点块属性名
+            defaultHeatPoint = 'default', // 默认热点块的名称
+            rateAttr = "coor-rate", // 采样频率
             separator = '-',
-            posObj = {},
+            posCache = {},
             assignedId = false,
             defaultNode,
             scrW = screen.width,
@@ -42,22 +42,22 @@
         function preProcess() { // 如果没有指定热点块名称，则进行预处理
             var nodes = doc.getElementsByTagName("*"),
                 node,
-                heatBlcok,
+                heatPoint,
                 pos,
                 i,
                 l = nodes.length;
             for (i = 0; i < l; i++) {
-                if (D.hasAttr(nodes[i], heatBlockAttr)) {
+                if (D.hasAttr(nodes[i], heatAttr)) {
                     node = nodes[i];
-                    heatBlcok = node.getAttribute(heatBlockAttr);
+                    heatPoint = node.getAttribute(heatAttr);
                     pos = getNodePos(node);
-                    posObj[heatBlcok] = pos;
-                    if (defaultHeatBlock === heatBlcok) {
-                        rate = parseFloat(node.getAttribute(heatRateAttr)) || 0;
+                    posCache[heatPoint] = pos;
+                    if (defaultHeatPoint === heatPoint) {
+                        rate = parseFloat(node.getAttribute(rateAttr)) || 0.8;
                     } else {
-                        if (0 === heatBlcok.indexOf(defaultHeatBlock + separator) && !posObj.hasOwnProperty(defaultHeatBlock)) {
-                            posObj[defaultHeatBlock] = pos;
-                            rate = parseFloat(node.getAttribute(heatRateAttr)) || 0;
+                        if (0 === heatPoint.indexOf(defaultHeatPoint + separator) && !posCache.hasOwnProperty(defaultHeatPoint)) {
+                            posCache[defaultHeatPoint] = pos;
+                            rate = parseFloat(node.getAttribute(rateAttr)) || 0.8;
                         }
                     }
                 }
@@ -91,21 +91,28 @@
                 return id;
             }
             do {
-                if (D.hasAttr(node, heatBlockAttr)) {
-                    return node.getAttribute(heatBlockAttr);
+                if (D.hasAttr(node, heatAttr)) {
+                    return node.getAttribute(heatAttr);
                 }
             }
             while (node = node.parentNode);
-            return defaultHeatBlock;
+            return defaultHeatPoint;
         }
 
-        function bindEvent(ele, evt, handler) {
-            if (ele.addEventListener) {
+        function dispatchEvent(ele, evt, handler) {
+            /**
+             * 事件绑定
+             */
+            if (ele.attachEvent) {
+                ele.attachEvent('on' + evt, function (args) {
+                    handler.call(ele, args)
+                });
+            } else if (ele.addEventListener) {
                 ele.addEventListener(evt, handler, false);
-            } else if (ele.attachEvent) {
-                ele.attachEvent('on' + evt, handler);
             } else {
-                ele['on' + evt] = handler;
+                ele['on' + evt] = function (args) {
+                    handler.call(ele, args)
+                }
             }
         }
 
@@ -121,7 +128,7 @@
             else {
                 defaultNode = doc.getElementById(id);
                 if (defaultNode) {
-                    posObj[defaultHeatBlock] = posObj[id] = getNodePos(defaultNode);
+                    posCache[defaultHeatPoint] = posCache[id] = getNodePos(defaultNode);
                     assignedId = false;
                 }
                 else {
@@ -132,9 +139,9 @@
                 rate = 1;
             }
 
-            if (0 === Math.floor(Math.random() / rate) && posObj.hasOwnProperty(defaultHeatBlock)) {
+            if (0 === Math.floor(Math.random() / rate) && posCache.hasOwnProperty(defaultHeatPoint)) {
 
-                bindEvent(doc, 'mousedown', function (event) {
+                dispatchEvent(doc, 'mousedown', function (event) {
                     var e = window.event || event,
                         isLeftButton = e.which ? 1 == e.which : 1 == e.button,
                         isRightButton = e.which ? 3 == e.which : 2 == e.button,
@@ -160,8 +167,8 @@
                                 mousePos = [doc.body.scrollLeft + e.clientX, doc.body.scrollTop + e.clientY];
                             }
                         }
-                        relatedX = mousePos[0] - posObj[curHeatBlock][0];
-                        relatedY = mousePos[1] - posObj[curHeatBlock][1];
+                        relatedX = mousePos[0] - posCache[curHeatBlock][0];
+                        relatedY = mousePos[1] - posCache[curHeatBlock][1];
 
                         try {
                             var info = ["heatTracker:", relatedX, "x", relatedY, "^", curHeatBlock, "^", scrW, "x", scrH].join("");

@@ -10,7 +10,8 @@ define(function (require, exports, module) {
         readyTime,
         loadTime,
         isDomReady = false,
-        isLoaded = false;
+        isLoaded = false,
+        startTime = window.performance && performance.timing ? performance.timing.navigationStart : win.__start__;
 
     function dispatchEvent(ele, evt, handler) {
         /**
@@ -33,7 +34,7 @@ define(function (require, exports, module) {
         if (!loadHandler.invoked) {
             loadHandler.invoked = true;
             // 需要在页面上埋点 __start__
-            loadTime = win.__start__ ? M.now() - win.__start__ : NaN;
+            loadTime = startTime ? M.now() - startTime : NaN;
             isLoaded = true;
         }
     }
@@ -42,7 +43,7 @@ define(function (require, exports, module) {
         if (!readyHandler.invoked) {
             readyHandler.invoked = true;
             // 需要在页面上埋点 __start__
-            readyTime = win.__start__ ? M.now() - win.__start__ : NaN;
+            readyTime = startTime ? M.now() - startTime : NaN;
             isDomReady = true;
         }
     }

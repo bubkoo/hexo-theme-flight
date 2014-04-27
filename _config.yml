@@ -1,10 +1,11 @@
 menu:
   首页: /
   归档: /archives
+  # Lab: http://lab.bubkoo.com/
   # 关于: /about
   # 简历: /resume
   Github: https://github.com/bubkoo
-  RSS: /atom.xml
+  # RSS: /atom.xml
 
 widgets:
   # - category
@@ -16,12 +17,15 @@ widgets:
   # - recent_visitors
 
 excerpt_link: 全文
-recent_posts_count: 10
+recent_posts_count: 15
 
 blogrolls:
   - Heroic Yang's Blog: http://heroicyang.com/
 
 duoshuo: bubkoo
+
+# 压缩 CSS 选项
+compress: true
 
 fancybox: true
 

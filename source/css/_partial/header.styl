@@ -1,7 +1,7 @@
 #header
   clearfix()
   text-shadow 0 0 1px #fff
-  margin 30px auto 40px auto
+  margin 30px auto
   @media screen and (max-width: 600px)
     margin-bottom 20px
     .alignleft,.alignright
@@ -16,9 +16,18 @@
       text-decoration none
 
   h1
+    font-family 'Press Start 2P',cursive,'Microsoft YaHei',tahoma,sans-serif
     font-weight normal
-    font-size 2.5em
+    font-size 3em
     line-height 1
+
+    a
+      color #e2e2e2
+      text-shadow #1BA1E2 1px 1px 0,#1BA1E2 -1px 1px 0,#1BA1E2 1px -1px 0,#1BA1E2 -1px -1px 0
+      transition text-shadow 1s ease
+      &:hover
+        transition text-shadow 1s ease
+        text-shadow rgba(51, 51, 51, 0.7) 10px 10px 10px
 
   h2
     font-weight normal
@@ -31,7 +40,7 @@
   #main-nav
     clearfix()
     font-family font-title
-    line-height 4em
+    line-height 3.5em
     ul
       list-style none
       li

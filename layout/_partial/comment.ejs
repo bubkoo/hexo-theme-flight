@@ -1,6 +1,6 @@
 <% if (!index && page.comments && theme.duoshuo){ %>
 <div class="post-comment">
-  <a id="comment"></a>
+  <a name="comment"></a>
   <div class="ds-thread" data-title="<%- item.title %>" data-url="<%- item.permalink %>"></div>
   <%- partial('_widget/util/loadDuoShuoJS') %>
 </div>

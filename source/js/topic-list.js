@@ -56,7 +56,7 @@
 
 			if (top && top.doScroll) {
 				(function doScrollCheck() {
-					if (!isReady) {
+					if (isReady) {
 
 						try {
 							top.doScroll('left');
@@ -76,10 +76,22 @@
 	}
 
 	function detect() {
-		var root = document.getElementById('j-content'),
+		var root = document.getElementById('wrapper'),
 			spliter = '.',
 			children;
 
+		root = root.firstChild;
+		while (root && root.className !== 'post') {
+			root = root.nextSibling;
+		}
+		root = root.firstChild;
+		while (root && root.className !== 'post-content') {
+			root = root.nextSibling;
+		}
+		root = root.firstChild;
+		while (root && root.className !== 'entry') {
+			root = root.nextSibling;
+		}
 		if (!root || !(children = root.childNodes)) {
 			return;
 		}
@@ -158,7 +170,7 @@
 			});
 		}
 		createTree(titles);
-		window.jTopiced = true;
+
 	}
 
 	function createTree(titles) {

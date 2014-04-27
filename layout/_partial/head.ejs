@@ -49,13 +49,13 @@
     <link href="<%- config.root %>favicon.ico" rel="icon" type="image/x-ico">
     <link rel="alternate" href="<% if (theme.rss){ %> <%- theme.rss %> <% } else { %> <%- config.root %>atom.xml<% } %>"
           title="<%= config.title %>" type="application/atom+xml">
-    <link rel="stylesheet" href="<%- config.root %>css/style.css" media="screen" type="text/css">
+    <link rel="stylesheet" href="<%- config.root %>css/style.css" media="screen" type="text/css" charset="utf-8">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <%- partial('google_analytics') %>
-    <script src="<%- config.root %>js/lib/sea.js"></script>
-    <script src="<%- config.root %>js/sea.config.js"></script>
+    <%- partial('google-analytics') %>
+    <script charset="utf-8" src="<%- config.root %>js/lib/sea.js"></script>
+    <script charset="utf-8" src="<%- config.root %>js/sea.config.js"></script>
     <script type="text/javascript">
         __start__ = window.performance && performance.timing ? performance.timing.navigationStart : Date.now();
         seajs.use('monitor');

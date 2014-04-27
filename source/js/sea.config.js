@@ -4,6 +4,8 @@ seajs.config({
         'monitor': '/js/monitor'
     },
     'alias': {
+        '$': '//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js',
+        'topicList': '/js/topic-list',
         'detector': 'lib/detector',
         'events': 'monitor/events',
         'aspect': 'monitor/aspect',

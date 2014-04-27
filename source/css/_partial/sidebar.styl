@@ -77,3 +77,37 @@
       li:first-child
         padding-top 0 !important
         border-top none !important
+
+#topic-list
+  width 270px
+  line-height 1.8em
+  background #fff;
+  box-shadow: 1px 2px 3px #ddd;
+  word-wrap: break-word;
+  transition: opacity 5s ease-in-out;
+  opacity: .2;
+  @media screen and (max-width: 900px)
+    display none
+  &:hover
+    transition: opacity .4s ease-out;
+    opacity: .5;
+  .title
+    padding 15px 20px
+    font-size 1.5em
+    border-bottom 1px solid color-border
+    font-weight normal
+  .topic-tree
+    padding 12px 0 12px 0
+    ul
+      list-style none
+      padding-left 17px
+      li
+        list-style none
+        line-height 1.5em
+        a
+          color #333
+          text-indent 20px
+          font-size 12px
+          &:hover
+            color color-link
+            text-decoration none

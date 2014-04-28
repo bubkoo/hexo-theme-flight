@@ -9,6 +9,8 @@
 				sticky(elem, {
 					top: 30
 				});
+
+				scrollSpy('#topic-list > .topic-tree');
 			}
 			sticked = true;
 		} else {

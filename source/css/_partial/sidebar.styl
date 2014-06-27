@@ -37,6 +37,7 @@
       width 100%
       box-sizing border-box
       color color-meta
+      transition all 0.2s ease-out
       &:focus
         color color-font
         border-color rgb(102, 175, 233)
@@ -85,12 +86,12 @@
   box-shadow: 1px 2px 3px #ddd;
   word-wrap: break-word;
   transition: opacity 5s ease-in-out;
-  opacity: .2;
+  opacity: .3;
   @media screen and (max-width: 900px)
     display none
   &:hover
-    transition: opacity .4s ease-out;
-    opacity: .5;
+    transition: opacity .5s ease-out;
+    opacity: .7;
   .title
     padding 15px 20px
     font-size 1.5em

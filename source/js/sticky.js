@@ -1,7 +1,7 @@
-(function(window, $, undefined) {
+(function (window, $, undefined) {
 
     var
-    doc = $(document),
+        doc = $(document),
         stickyPrefix = ['-webkit-', '-ms-', '-o-', '-moz-', ''],
         guid = 0,
 
@@ -17,11 +17,11 @@
         this.options = options || {};
         this.elem = $(this.options.element);
         this.position = this.options.position;
-        this.callback = options.callback || function() {};
+        this.callback = options.callback || function () {};
         this.stickyId = guid++;
     }
 
-    Sticky.prototype.adjust = function() {
+    Sticky.prototype.adjust = function () {
         var offset = this.elem.offset(),
             parent = this.elem.parent(),
             top = this.position.top,
@@ -41,7 +41,7 @@
         }
     };
 
-    Sticky.prototype.render = function() {
+    Sticky.prototype.render = function () {
         // only bind once
         if (!this.elem.length || this.elem.data('bind-sticked')) {
             return this;
@@ -57,7 +57,7 @@
         return this;
     };
 
-    Sticky.prototype.natcveSticky = function() {
+    Sticky.prototype.natcveSticky = function () {
         var tmp = '';
         for (var i = 0; i < stickyPrefix.length; i++) {
             tmp += 'position:' + stickyPrefix[i] + 'sticky;';
@@ -71,7 +71,7 @@
         this.elem[0].style.cssText += tmp;
 
         var self = this;
-        var scrollCallback = function() {
+        var scrollCallback = function () {
             var scrollTop = doc.scrollTop(),
                 top = self.position.top,
                 bottom = self.position.bottom;
@@ -96,20 +96,24 @@
                 }
             }
         };
-        $(window).on('scroll.sticky' + this.stickyId, function() {
+        $(window).on('scroll.sticky' + this.stickyId, function () {
             scrollCallback.call(self);
         });
 
-        $(window).on('resize.sticky' + this.stickyId, debounce(function() {
+        $(window).on('resize.sticky' + this.stickyId, debounce(function () {
             self.stopStick();
             scrollCallback.call(self);
         }, 120));
     };
 
-    Sticky.prototype.fixedSticky = function() {
+    Sticky.prototype.fixedSticky = function () {
         this.adjust();
         this.ghost = this.elem.clone(true);
-        var self = this;
+        var self = this,
+            id = this.elem.attr('id');
+        if (id) {
+            this.ghost.attr('id', id + '-sticky-polyfill-' + this.stickyId);
+        }
 
         if (!isFixedSupported) {
             // avoid floatImage Shake for IE6
@@ -117,7 +121,7 @@
             $('<style id="ie6-sticky" type="text/css"> * html{ background:url(null) no-repeat fixed; } </style>').appendTo('head');
         }
 
-        var scrollCallback = function() {
+        var scrollCallback = function () {
 
             var scrollTop = doc.scrollTop(),
                 top = self.position.top,
@@ -168,11 +172,11 @@
             }
         };
 
-        $(window).on('scroll.sticky' + this.stickyId, function() {
+        $(window).on('scroll.sticky' + this.stickyId, function () {
             scrollCallback.call(self);
         });
 
-        $(window).on('resize.sticky' + this.stickyId, debounce(function() {
+        $(window).on('resize.sticky' + this.stickyId, debounce(function () {
             self.stopStick();
             self.adjust();
             scrollCallback.call(self);
@@ -181,7 +185,7 @@
         scrollCallback(this);
     };
 
-    Sticky.prototype.startStick = function() {
+    Sticky.prototype.startStick = function () {
         if (!this.sticking) {
             this.sticking = true;
             if (!isStickySupported) {
@@ -195,7 +199,7 @@
         }
     };
 
-    Sticky.prototype.stopStick = function() {
+    Sticky.prototype.stopStick = function () {
         if (this.sticking) {
             this.sticking = false;
             if (!isStickySupported) {
@@ -206,7 +210,7 @@
         }
     };
 
-    Sticky.prototype.destroy = function() {
+    Sticky.prototype.destroy = function () {
         this.stopStick();
         this.elem.data('bind-sticked', false);
         $(window).off('scroll.sticky' + this.stickyId);
@@ -271,7 +275,7 @@
         if (document.createElement && body && body.appendChild && body.removeChild) {
 
             var elem = document.createElement('div'),
-                getStyle = function(styleName) {
+                getStyle = function (styleName) {
                     if (getComputedStyle) {
                         return getComputedStyle(elem).getPropertyValue(styleName);
                     } else {
@@ -295,18 +299,18 @@
 
     // source from: https://github.com/jashkenas/underscore/blob/master/underscore.js#L699
     function getTime() {
-        return (Date.now || function() {
+        return (Date.now || function () {
             return new Date().getTime();
         })()
     }
 
     function debounce(func, wait, immediate) {
         var timeout, args, context, timestamp, result;
-        return function() {
+        return function () {
             context = this;
             args = arguments;
             timestamp = getTime();
-            var later = function() {
+            var later = function () {
                 var last = getTime() - timestamp;
                 if (last < wait) {
                     timeout = setTimeout(later, wait - last);

@@ -218,13 +218,33 @@
     ready(function () {
         detect();
 
-        var elem = $('#topic-list');
+        var elem = $('#topic-list'),
+            nativeSpy,
+            ghostSpy;
+
+
         if (elem && elem.length) {
+
             sticky(elem, {
                 top: 30
-            });
+            }, function (sticky) {
 
-            scrollSpy('#topic-list > .topic-tree');
+                if (sticky) {
+                    // startSticky
+                    if (nativeSpy) {
+                        nativeSpy.destroy();
+                        nativeSpy = null;
+                    }
+                    ghostSpy = scrollSpy(this.ghost.find('.topic-tree'));
+                } else {
+                    // stopSticky
+                    if (ghostSpy) {
+                        ghostSpy.destroy();
+                        ghostSpy = null;
+                    }
+                    nativeSpy = scrollSpy($('#topic-list').find('.topic-tree'));
+                }
+            });
         }
 
     });

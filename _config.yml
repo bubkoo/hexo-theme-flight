@@ -9,7 +9,7 @@ menu:
 
 widgets:
   # - category
-  - search
+  # - search
   - tagcloud
   - recent_posts
   # - archive

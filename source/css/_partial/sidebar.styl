@@ -97,23 +97,32 @@
     font-size 1.5em
     border-bottom 1px solid color-border
     font-weight normal
-  .topic-tree
-    padding 12px 0 12px 0
-    ul
+
+.topic-tree
+  padding 12px 0 12px 0
+  ul
+    list-style none
+    padding-left 17px
+    li
       list-style none
-      padding-left 17px
-      li
-        list-style none
-        line-height 1.5em
-        a
-          color #333
-          text-indent 20px
-          font-size 12px
-          &:hover
-            color color-link
-            text-decoration none
-      li.active
-        a,a:hover
+      line-height 1.5em
+      a
+        color #333
+        font-size 12px
+        display block
+        padding-left 10px
+        &:hover
           color color-link
           text-decoration none
+        i
+          font-style normal
+          float left
+        span
+          display block
+          padding-left 6px
+          overflow hidden // bfc
+    li.active
+      a, a:hover
+        color color-link
+        text-decoration none
 

@@ -186,7 +186,7 @@
                 if (level > lastLevel) {
                     buffer += '<ul>\n';
                 }
-                buffer += '<li><a href="#' + title.link + '">' + title.prefix + ' ' + title.text + '</a></li>\n';
+                buffer += '<li><a href="#' + title.link + '"><i>' + title.prefix + '</i><span>' + title.text + '</span></a></li>\n';
                 if (level > nextLevel) {
                     buffer += '</ul>\n';
                 }

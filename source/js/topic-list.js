@@ -219,13 +219,14 @@
         detect();
 
         var elem = $('#topic-list'),
+            oldLoad,
+            stick,
             nativeSpy,
             ghostSpy;
 
-
         if (elem && elem.length) {
 
-            sticky(elem, {
+            stick = sticky(elem, {
                 top: 30
             }, function (sticky) {
 
@@ -245,6 +246,15 @@
                     nativeSpy = scrollSpy($('#topic-list').find('.topic-tree'));
                 }
             });
+
+            oldLoad = window.onload;
+            window.onload = function () {
+                stick.adjust();
+                if (oldLoad) {
+                    oldLoad();
+                }
+            };
+
         }
 
     });

@@ -26,7 +26,7 @@ define(function (require, exports, module) {
                 detector.engine.name + '/' + detector.engine.fullVersion + '|' +
                 win.screen.width + '/' + win.screen.height + '/' + win.screen.colorDepth +
                 (detector.browser.compatible ? '|c' : ''),
-            v: version
+            v  : version
         },
     // TODO: 单页应用 url 不刷新的问题，考虑将 url 和 ref 移除 commonData
         commonDataStr = param(commonData),
@@ -37,8 +37,8 @@ define(function (require, exports, module) {
 
     M.URI = {
         reFolderExt: /[^\/]*$/,
-        reProtocol: /^\w+:/,
-        reDataURI: /^data:/,
+        reProtocol : /^\w+:/,
+        reDataURI  : /^data:/,
 
         abs: function (uri) { // 绝对路径
             if (!M.URI.reProtocol.test(uri)) {
@@ -183,7 +183,7 @@ define(function (require, exports, module) {
         for (i = 0, l = list.length; i < l; i++) {
             M.push({
                 type: 'dlint',
-                err: list[i]
+                err : list[i]
             });
         }
     };
@@ -215,20 +215,20 @@ define(function (require, exports, module) {
         }
         M.push({
             type: 'jsError',
-            msg: err.message || err.description || '',
+            msg : err.message || err.description || '',
             name: err.name || '',
-            num: err.number || 0,
-            fl: err.fileName || '',
-            ln: err.lineNumber || err.line || 0,
-            cn: err.columnNumber || err.column || 0,
-            stk: stack
+            num : err.number || 0,
+            fl  : err.fileName || '',
+            ln  : err.lineNumber || err.line || 0,
+            cn  : err.columnNumber || err.column || 0,
+            stk : stack
         });
 
     };
 
     win.monitor = M;
     module.exports = M;
-    seajs.use(['monitor-perf', 'monitor-dlint','monitor-heat']);
+    seajs.use(['monitor-perf', 'monitor-dlint', 'monitor-heat']);
 
     function getFunName(caller) {
         var mc = String(caller).match(reg_fun);
@@ -370,6 +370,7 @@ define(function (require, exports, module) {
             img = null;
         };
 
-        img.src = url;
+        /// TODO: 打开发送给服务器的连接
+        //        img.src = url;
     }
 });

@@ -12,6 +12,7 @@ widgets:
   # - search
   - tagcloud
   - recent_posts
+  # - clock
   # - archive
   # - recent_comments
   # - recent_visitors

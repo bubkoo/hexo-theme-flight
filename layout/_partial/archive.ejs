@@ -10,14 +10,14 @@
 
 
 <% if (pagination == 2){ %>
-
-  <% page.posts.each(function(post){ %>
+  <% page.posts.each(function(post) { %>
     <%- partial('article', {post: post, index: true}) %>
   <% }); %>
   <%- partial('pagination') %>
-
-<% } else if(page.tag || page.category || page.year){ %>
-  <h2 class="archive-title<% if (page.tag){ %> tag<% } else if (page.category){ %> category<% } %>"><%= title %></h2>
+<% } else if (page.tag || page.category || page.year) { %>
+  <h2 class="archive-title<% if (page.tag){ %> tag<% } else if (page.category){ %> category<% } %>">
+      <%= title %>
+  </h2>
   <div class="archives">
 
   <% page.posts.each(function(post, i){ %>

@@ -1,33 +1,35 @@
-<script charset="utf-8" src="<%- config.root %>js/jquery-1.11.1.min.js"></script>
-<script charset="utf-8" src="<%- config.root %>js/jquery.imagesloaded.min.js"></script>
+<script charset="utf-8"
+        src="<%- config.root %>js/lib/jquery-1.11.1.min.js"></script>
+<script charset="utf-8"
+        src="<%- config.root %>js/jquery.imagesloaded.min.js"></script>
 <script charset="utf-8" src="<%- config.root %>js/gallery.js"></script>
 <script charset="utf-8" src="<%- config.root %>js/sticky.js"></script>
-<script charset="utf-8" src="<%- config.root %>js/scrollspy.js"></script>
+<script charset="utf-8" src="<%- config.root %>js/scroll-spy.js"></script>
 <script charset="utf-8" src="<%- config.root %>js/topic-list.js"></script>
-
 
 <% if (config.disqus_shortname){ %>
 <script type="text/javascript">
-var disqus_shortname = '<%= config.disqus_shortname %>';
-
-(function(){
-  var dsq = document.createElement('script');
-  dsq.type = 'text/javascript';
-  dsq.async = true;
-  dsq.charset='utf-8';
-  dsq.src = '//' + disqus_shortname + '.disqus.com/<% if (page.comments){ %>embed.js<% } else { %>count.js<% } %>';
-  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-}());
+    var disqus_shortname = '<%= config.disqus_shortname %>';
+    (function () {
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.charset = 'utf-8';
+        dsq.src = '//' + disqus_shortname + '.disqus.com/<% if (page.comments){ %>embed.js<% } else { %>count.js<% } %>';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
 </script>
 <% } %>
-
 <% if (theme.fancybox){ %>
-<link charset="utf-8" rel="stylesheet" href="<%- config.root %>fancybox/jquery.fancybox.css" media="screen" type="text/css">
-<script charset="utf-8" src="<%- config.root %>fancybox/jquery.fancybox.pack.js"></script>
+<link charset="utf-8" rel="stylesheet"
+      href="<%- config.root %>fancybox/jquery.fancybox.css" media="screen"
+      type="text/css">
+<script charset="utf-8"
+        src="<%- config.root %>fancybox/jquery.fancybox.pack.js"></script>
 <script type="text/javascript">
-(function($){
-  $('.fancybox').fancybox();
-})(jQuery);
+    (function ($) {
+        $('.fancybox').fancybox();
+    })(jQuery);
 </script>
 <% } %>
 <%- partial('baidu-tongji') %>

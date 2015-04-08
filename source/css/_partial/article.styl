@@ -262,6 +262,8 @@ article
         padding 10px
         border-radius 5px
         box-shadow 1px 1px 4px rgba(150,150,150,.3)
+        max-width 600px
+        box-sizing border-box
         &:hover
           box-shadow 1px 1px 4px rgba(150,150,150,.5)
     .caption
@@ -396,6 +398,7 @@ article
     border-radius: 50%
     background-color: color-link
     box-shadow: 0 0 12px rgba(27, 161, 226, 1.0), 0 0 18px rgba(27, 161, 226, 1.0);
+    transform: translate3d(0, 0, 0); /* 强制硬件加速 */
     animation-name: glow
     animation-duration: 1s
     animation-iteration-count: infinite

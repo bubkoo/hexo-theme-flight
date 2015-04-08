@@ -1,7 +1,11 @@
 <% if (!index && page.comments && theme.duoshuo){ %>
 <div class="post-comment">
-  <a name="comment"></a>
-  <div class="ds-thread" data-title="<%- item.title %>" data-url="<%- item.permalink %>"></div>
-  <%- partial('_widget/util/loadDuoShuoJS') %>
+    <a name="comment"></a>
+
+    <div class="ds-thread"
+         data-thread-key="<%- item.permalink %>"
+         data-title="<%- item.title %>"
+         data-url="<%- item.permalink %>"></div>
+    <%- partial('_widget/util/loadDuoShuoJS') %>
 </div>
 <% } %>

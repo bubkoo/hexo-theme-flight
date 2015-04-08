@@ -76,18 +76,7 @@
             spliter = '.',
             children;
 
-        root = root.firstChild;
-        while (root && root.className !== 'post') {
-            root = root.nextSibling;
-        }
-        root = root.firstChild;
-        while (root && root.className !== 'post-content') {
-            root = root.nextSibling;
-        }
-        root = root.firstChild;
-        while (root && root.className !== 'entry') {
-            root = root.nextSibling;
-        }
+        root = root.querySelector('.entry');
         if (!root || !(children = root.childNodes)) {
             return;
         }

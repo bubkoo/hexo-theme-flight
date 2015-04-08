@@ -1,6 +1,6 @@
 menu:
-  首页: /
-  归档: /archives
+  </>: /
+  Archives: /archives
   # Lab: http://lab.bubkoo.com/
   # 关于: /about
   # 简历: /resume

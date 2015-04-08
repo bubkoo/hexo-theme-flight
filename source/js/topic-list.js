@@ -1,4 +1,5 @@
 (function (window, undefined) {
+
     var document = window.document;
 
     function ready(callback) {
@@ -203,7 +204,6 @@
 
     }
 
-
     ready(function () {
         detect();
 
@@ -219,21 +219,42 @@
                 top: 30
             }, function (sticky) {
 
+                var $topList = $('#topic-list');
+                var $progress = $topList.find('.topic-progress');
+
                 if (sticky) {
                     // startSticky
                     if (nativeSpy) {
                         nativeSpy.destroy();
                         nativeSpy = null;
                     }
+                    $progress = this.ghost.find('.topic-progress');
                     ghostSpy = scrollSpy(this.ghost.find('.topic-tree'));
+
                 } else {
                     // stopSticky
                     if (ghostSpy) {
                         ghostSpy.destroy();
                         ghostSpy = null;
                     }
-                    nativeSpy = scrollSpy($('#topic-list').find('.topic-tree'));
+                    nativeSpy = scrollSpy($topList.find('.topic-tree'));
                 }
+
+                var $window = $(window);
+                var h = $(document.body).height() - $window.height();
+
+                function setProgress() {
+                    var percent = Math.max(0, Math.min(1, $window.scrollTop() / h));
+                    $progress.css('width', percent * 100 + '%');
+                }
+
+                $window
+                    .on('scroll.progress', setProgress)
+                    .on('resize.progress', function () {
+                        h = $(document.body).height() - $window.height();
+                    });
+
+                setProgress();
             });
 
             oldLoad = window.onload;

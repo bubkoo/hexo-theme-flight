@@ -80,6 +80,7 @@
         border-top none !important
 
 .topic-list
+  position relative
   width 270px
   line-height 1.8em
   background #fff;
@@ -92,38 +93,45 @@
   &:hover
     transition: opacity .5s ease-out;
     opacity: .7;
+
   .title
     padding 15px 20px
     font-size 1.5em
     border-bottom 1px solid color-border
     font-weight normal
 
-.topic-tree
-  padding 12px 0 12px 0
-  ul
-    list-style none
-    padding-left 17px
-    li
+  .topic-tree
+    padding 12px 0
+    ul
       list-style none
-      line-height 1.5em
-      a
-        color #333
-        font-size 12px
-        display block
-        padding-left 10px
-        &:hover
+      padding-left 17px
+      li
+        list-style none
+        line-height 1.5em
+        a
+          color #333
+          font-size 12px
+          display block
+          padding-left 10px
+          &:hover
+            color color-link
+            text-decoration none
+          i
+            font-style normal
+            float left
+          span
+            display block
+            padding-left 6px
+            padding-right 12px
+            overflow hidden // bfc
+      li.active
+        a, a:hover
           color color-link
           text-decoration none
-        i
-          font-style normal
-          float left
-        span
-          display block
-          padding-left 6px
-          padding-right 12px
-          overflow hidden // bfc
-    li.active
-      a, a:hover
-        color color-link
-        text-decoration none
 
+
+  .topic-progress
+    position absolute
+    top 55px
+    left 0
+    border-bottom 2px solid #1ba1e2

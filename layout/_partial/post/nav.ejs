@@ -1,4 +1,4 @@
-<% if (post.prev || post.next){ %>
+<% if (!is_home() && (post.prev || post.next)) { %>
 
 <nav id="article-nav">
   <div></div>
